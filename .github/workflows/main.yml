@@ -18,7 +18,10 @@ jobs:
         include-prerelease: true
         
     - name: Setup wasm-tools
-      uses: jcbhmr/setup-wasm-tools@v2.0.2
+      uses: bytecodealliance/actions/wasm-tools/setup@v1
+
+    - name: Run wasm-tools version
+      run: "wasm-tools --version"
 
     - name: workaload repair
       run: dotnet workaload repair
