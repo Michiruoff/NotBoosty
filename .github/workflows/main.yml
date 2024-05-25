@@ -17,8 +17,8 @@ jobs:
         dotnet-version: '6.0.x'
         include-prerelease: true
         
-    - name: install wasm-tools
-      run: dotnet workaload install wasm-tools
+    - name: Setup wasm-tools
+      uses: jcbhmr/setup-wasm-tools@v2.0.2
 
     - name: workaload repair
       run: dotnet workaload repair
