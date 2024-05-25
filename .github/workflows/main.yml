@@ -20,12 +20,6 @@ jobs:
     - name: Setup wasm-tools
       uses: bytecodealliance/actions/wasm-tools/setup@v1
 
-    - name: Run wasm-tools version
-      run: "wasm-tools --version"
-
-    - name: workaload repair
-      run: dotnet workaload repair
-      
     - name: publish
       run: dotnet publish NotBoosty.csproj -c Release --output release --nologo
       
