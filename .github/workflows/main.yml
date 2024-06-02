@@ -19,9 +19,6 @@ jobs:
     - name: Setup wasm-tools
       uses: bytecodealliance/actions/wasm-tools/setup@v1
 
-    - name: Install dependencies
-      run: dotnet restore
-
     - name: publish
       run: dotnet publish NotBoosty.csproj -c Release --output release --nologo
       
